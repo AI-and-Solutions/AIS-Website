@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Homepage from './components/Homepage';
+import Othello from './components/Othello';
+import Chess from './components/Chess';
+import Pong from './components/Pong';
+import TicTacToe from './components/TicTacToe';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/othello" element={<Othello />} />
+        <Route path="/chess" element={<Chess />} />
+        <Route path="/pong" element={<Pong />} />
+        <Route path="/tictactoe" element={<TicTacToe />} />
+      </Routes>
+    </Router>
   );
 }
 
