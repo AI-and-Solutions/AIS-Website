@@ -1,0 +1,3 @@
+[submodule "ai-game-interface/resources/AIS-F24"]
+	path = ai-game-interface/resources/AIS-F24
+	url = https://github.com/AI-and-Solutions/AIS-F24.git
