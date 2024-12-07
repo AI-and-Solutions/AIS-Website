@@ -34,7 +34,7 @@ const Homepage = () => {
       </div>
       <div className="description">
         <h2>About Us</h2>
-        <p>Filler text about RCOS, the team, and our mission.</p>
+        <p>This is the Fall 2024 RCOS project. We're building a website that will host multiple AI models to play games with.</p>
       </div>
     </div>
   );
