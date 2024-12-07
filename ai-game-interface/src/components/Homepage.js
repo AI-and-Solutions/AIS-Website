@@ -1,20 +1,31 @@
-// src/components/Homepage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Homepage.css';  // Custom styling
+import './Homepage.css'; // Custom styling
 
 const Homepage = () => {
   return (
     <div className="homepage">
-      <div className="logo"> {/* Add a logo image here if available */}
+      <div className="logo">
         <img src="/path-to-logo.png" alt="Logo" />
       </div>
-      <h1>AI & Solutions</h1>
+      <h1 className="header">AI & Solutions</h1>
       <div className="games-list">
-        <Link to="/othello">Othello</Link>
-        <Link to="/chess">Chess</Link>
-        <Link to="/pong">Pong</Link>
-        <Link to="/tictactoe">Tic Tac Toe</Link>
+        <Link to="/othello" className="game-card">
+          <img src="/path-to-othello-image.png" alt="Othello" />
+          <h2>Othello</h2>
+        </Link>
+        <Link to="/chess" className="game-card">
+          <img src="/path-to-chess-image.png" alt="Chess" />
+          <h2>Chess</h2>
+        </Link>
+        <Link to="/pong" className="game-card">
+          <img src="/path-to-pong-image.png" alt="Pong" />
+          <h2>Pong</h2>
+        </Link>
+        <Link to="/tictactoe" className="game-card">
+          <img src="/path-to-tictactoe-image.png" alt="Tic Tac Toe" />
+          <h2>Tic Tac Toe</h2>
+        </Link>
       </div>
       <div className="description">
         <h2>About Us</h2>
