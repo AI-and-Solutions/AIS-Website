@@ -5,12 +5,13 @@ import othelloImage from '../othello.jpeg';
 import chessImage from '../chess.jpeg';
 import pongImage from '../pong.png';
 import tictactoeImage from '../tictactoe.jpg';
+import logo from '../logo.png'
 
 const Homepage = () => {
   return (
     <div className="homepage">
       <div className="logo">
-        <img src="../../resources/logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
       <h1 className="header">AI & Solutions</h1>
       <div className="games-list">
