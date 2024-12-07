@@ -1,29 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Homepage.css'; // Custom styling
+import othelloImage from '../othello.jpeg';
+import chessImage from '../chess.jpeg';
+import pongImage from '../pong.png';
+import tictactoeImage from '../tictactoe.jpg';
 
 const Homepage = () => {
   return (
     <div className="homepage">
       <div className="logo">
-        <img src="/path-to-logo.png" alt="Logo" />
+        <img src="../../resources/logo.png" alt="Logo" />
       </div>
       <h1 className="header">AI & Solutions</h1>
       <div className="games-list">
         <Link to="/othello" className="game-card">
-          <img src="/path-to-othello-image.png" alt="Othello" />
+          <img src={othelloImage} alt="Othello" />
           <h2>Othello</h2>
         </Link>
         <Link to="/chess" className="game-card">
-          <img src="/path-to-chess-image.png" alt="Chess" />
+          <img src={chessImage} alt="Chess" />
           <h2>Chess</h2>
         </Link>
         <Link to="/pong" className="game-card">
-          <img src="/path-to-pong-image.png" alt="Pong" />
+          <img src={pongImage} alt="Pong" />
           <h2>Pong</h2>
         </Link>
         <Link to="/tictactoe" className="game-card">
-          <img src="/path-to-tictactoe-image.png" alt="Tic Tac Toe" />
+          <img src={tictactoeImage} alt="Tic Tac Toe" />
           <h2>Tic Tac Toe</h2>
         </Link>
       </div>
